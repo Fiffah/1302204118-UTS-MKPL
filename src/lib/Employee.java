@@ -9,17 +9,13 @@ public class Employee {
 	private String idNumber;
 	private int yearJoined;
 	private int monthJoined;
-	private int dayJoined;
 	private int monthWorkingInYear;
 	
 	private boolean isForeigner;
-	private boolean gender; //true = Laki-laki, false = Perempuan
-	
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
 	
-	private String spouseName;
 	private String spouseIdNumber;
 
 	private List<String> childNames;
@@ -29,10 +25,7 @@ public class Employee {
 		this.idNumber = idNumber;
 		this.yearJoined = yearJoined;
 		this.monthJoined = monthJoined;
-		this.dayJoined = dayJoined;
 		this.isForeigner = isForeigner;
-		this.gender = gender;
-		
 		childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();
 	}
@@ -70,7 +63,6 @@ public class Employee {
 	}
 	
 	public void setSpouse(String spouseName, String spouseIdNumber) {
-		this.spouseName = spouseName;
 		this.spouseIdNumber = idNumber;
 	}
 	
