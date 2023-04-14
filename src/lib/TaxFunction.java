@@ -19,9 +19,7 @@ public class TaxFunction {
 		
 		int tax = 0;
 		
-		if (numberOfMonthWorking > 12) {
-			System.err.println("More than 12 month working per year");
-		}
+		if (numberOfMonthWorking > 12) System.err.println("More than 12 month working per year");
 		
 		
 		if (isMarried) {
